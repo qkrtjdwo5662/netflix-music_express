@@ -1,0 +1,278 @@
+@import "reset";
+
+$maind-red:#e50a15;
+$dark-red:#dc060f;
+$logo-dark-red:#b20710;
+$white:#ffffff;
+$gray:#303030;
+$light-gray:#3c3c3c;
+$black: #000000;
+$black2: #121212;
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $black !important;
+}
+
+.introlayout {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+
+  .btn-secondary {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    background-color: #000000;
+    border-color: $light-gray;
+    color: $light-gray;
+    padding: 5px 0px;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 3px !important;
+    transition: 0.1s !important;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2d2d2d !important;
+    }
+
+    &:active {
+      color: $light-gray;
+    }
+
+  }
+  
+  .intro-logo {
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    opacity: 0;
+    animation: fade-in 1.5s 5.5s forwards ease;
+  }
+  
+  //로고 제작
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    height: 470px;
+    transform-origin: 50px;
+    transform: scale(0.5);
+    margin: auto;
+    overflow: hidden;
+    // background-color: $light-gray;
+    animation-name: introScaleUp, fade-out;
+    animation-duration: 6.5s, 2s;
+    animation-delay: 1.5s, 5.5s;
+    animation-fill-mode: both, forwards;
+    animation-timing-function: ease-in, ease;
+
+    .fa-music {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+    font-size: 20px;
+    color: white;
+    scale: (0.2);
+    animation: music 2s 4s both ease;
+    z-index: 4;
+    }
+
+    .material-symbols-outlined{
+    position: absolute;
+    top: 220px;
+    left: 40px;
+    font-size: 40px;
+    font-weight:100;
+    color: white;
+    scale: (0.3);
+    animation: music 2s 3.5s both ease;
+    z-index: 4;
+    }
+    
+    .lineEffect{
+      position: absolute;
+      background-color: rgb(222, 222, 222);
+      width: 1px;
+      height: 472px;
+      transition: 1s;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .intro1 {
+      width: 86.5px;
+      height: 472px;
+      position: absolute;
+      background-color: $logo-dark-red;
+      clip-path: polygon(50% 0, 100% 0, 100% 35%, 100% 70%, 100% 98%, 52% 99%, 0 100%, 0% 70%, 0% 35%, 0 0);
+      z-index: 1;
+      transform-origin: bottom;
+      left: 0;
+    }
+
+    .intro2__wrap {
+      position: absolute;
+      margin: auto;
+      bottom: -33px;
+      left: 0;
+      right: 0;
+      filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5));
+      z-index: 3;
+      width: 84px;
+      height: 534px;
+      transform: rotate(-20deg);
+      opacity: 1;
+
+    .intro2 {
+      position: absolute;
+      margin: auto;
+      width: inherit;
+      height: inherit;
+      top: inherit;
+      left: inherit;
+      right: inherit;
+      background-color: #ff0d19;
+      clip-path: polygon(0 0, 100% 5.9%, 100% 100%, 0 92%);
+      transform-origin: top;
+      }
+    }
+ 
+
+    .intro3 {
+      position: absolute;
+      right: 0;
+      background-color: $logo-dark-red;
+      width: 86.5px;
+      height: 472px;
+      clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 49% 99%, 0 98%, 0% 70%, 0% 35%, 0 0);
+      z-index: 1;
+      transform-origin: bottom;
+    }
+  }
+}
+
+
+@keyframes intro-in {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+     transform: scaleY(1);
+  }
+}
+
+
+@keyframes intro-reverse {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+     transform: scaleY(0);
+  }
+}
+
+@keyframes introScaleUp {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+     transform: scale(25);
+  }
+}
+
+// 여기서부터 주석
+@for $i from 0 to 11 {
+  @keyframes random-position#{$i} {
+    0% {
+      left: random($limit: 100) + px;
+    }
+  
+    10% {
+      left: random($limit: 100) + px;
+    }
+  
+    20% {
+      left: random($limit: 100) + px;
+    }
+  
+    30% {
+      left: random($limit: 50) + px;
+    }
+  
+    40% {
+      left: random($limit: 100) + px;
+    }
+  
+    50% {
+      left: random($limit: 100) + px;
+    }
+  
+    60% {
+      left: random($limit: 100) + px;
+    }
+  
+    70% {
+      left: random($limit: 100) + px;
+    }
+  
+    80% {
+      left: random($limit: 100) + px;
+    }
+  
+    90% {
+      left: random($limit: 100) + px;
+    }
+  
+    100% {
+      left: random($limit: 100) + px;
+    }
+  }
+
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }  
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes music {
+  0% {
+    transform: scale(0.3) rotate(10deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: scale(2) rotate(10deg);
+    opacity: 0;
+  }
+}

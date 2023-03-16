@@ -1,0 +1,291 @@
+.join-title {
+  position: absolute;
+  margin-bottom: 550px;
+  font-size: 30px;
+  color: rgb(219, 219, 219);
+  margin-left: 20px;
+}
+
+.join-ad {
+  position: absolute;
+  margin-bottom: 340px;
+  font-size: 15px;
+  color: rgb(219, 219, 219);
+}
+
+.login-wrap {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/main_banner/login_bg@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .login-checkBox {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.5);
+
+      .return-login {
+       margin-right: 15px;
+       font-size: 15px;
+       color: rgba(255, 255, 255, 0.5);
+       z-index: 3;
+
+       &:hover {
+        color: rgba(255, 255, 255, 0.8) !important;
+        text-decoration: underline !important;
+      }
+      }
+      img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto 50px;
+      }
+    }
+  }
+}
+
+//비밀번호 불일치 얼러트
+#pw_modal-wrongPw {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+
+  .pw_modal-window {
+    position: relative;
+    top: 50px;
+    background: #131313;
+    border-radius: 20px;
+    width: 500px;
+    height: 150px;
+    top: 30%;
+    position: absolute;
+    padding: 20px;
+    
+    .pw_content {
+      position: absolute;
+      margin-bottom: 60px;
+      right: 50%;
+      transform: translate(50%);
+
+      .password-miss{
+          font-size: 18px;
+          color: #D1D1D1;
+        }
+        .pwMissBtn {
+          position: absolute;
+          margin-bottom: 30px;
+          right: 50%;
+          transform: translateX(50%);
+          margin-top: 40px;
+          .rePassword {
+            text-align: center;
+            background-color: red;
+            color: #FFFFFF;
+            margin-right: 10px;
+            border-radius: 10px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            border: none;
+            &:hover{
+              cursor: pointer;
+              opacity: 0.8;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  //정보누락시 모달
+  #pw_modal-empty {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+
+  .pw_modal-window {
+    position: relative;
+    top: 50px;
+    background: #131313;
+    border-radius: 20px;
+    width: 500px;
+    height: 150px;
+    top: 30%;
+    position: absolute;
+    padding: 20px;
+    
+    .pw_content {
+      position: absolute;
+      margin-bottom: 60px;
+      right: 50%;
+      transform: translate(50%);
+
+      .password-miss{
+          font-size: 18px;
+          color: #D1D1D1;
+        }
+        .pwMissBtn {
+          position: absolute;
+          margin-bottom: 30px;
+          right: 50%;
+          transform: translateX(50%);
+          margin-top: 40px;
+          .rePassword {
+            text-align: center;
+            background-color: red;
+            color: #FFFFFF;
+            margin-right: 10px;
+            border-radius: 10px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            border: none;
+            &:hover{
+              cursor: pointer;
+              opacity: 0.8;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  //이메일 형식 틀렸을 시 모달
+  #pw_modal-wrongEmail {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+  
+    .pw_modal-window {
+      position: relative;
+      top: 50px;
+      background: #131313;
+      border-radius: 20px;
+      width: 500px;
+      height: 150px;
+      top: 30%;
+      position: absolute;
+      padding: 20px;
+      
+      .pw_content {
+        position: absolute;
+        margin-bottom: 60px;
+        right: 50%;
+        transform: translate(50%);
+  
+        .password-miss{
+            font-size: 18px;
+            color: #D1D1D1;
+          }
+          .pwMissBtn {
+            position: absolute;
+            margin-bottom: 30px;
+            right: 50%;
+            transform: translateX(50%);
+            margin-top: 40px;
+            .rePassword {
+              text-align: center;
+              background-color: red;
+              color: #FFFFFF;
+              margin-right: 10px;
+              border-radius: 10px;
+              padding: 12px 20px;
+              border-radius: 6px;
+              font-size: 14px;
+              border: none;
+              &:hover{
+                cursor: pointer;
+                opacity: 0.8;
+              }
+            }
+          }
+  
+        }
+      }
+    }
+
+    //모든 확인 통과시 로그인 화면으로 가기
+  #pw_modal-joinConfirm {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+  
+    .pw_modal-window {
+      position: relative;
+      top: 50px;
+      background: #131313;
+      border-radius: 20px;
+      width: 500px;
+      height: 150px;
+      top: 30%;
+      position: absolute;
+      padding: 20px;
+      
+      .pw_content {
+        position: absolute;
+        margin-bottom: 60px;
+        right: 50%;
+        transform: translate(50%);
+  
+        .password-miss{
+            font-size: 18px;
+            color: #D1D1D1;
+          }
+          .pwMissBtn {
+            position: absolute;
+            margin-bottom: 30px;
+            right: 50%;
+            transform: translateX(50%);
+            margin-top: 40px;
+            .rePassword {
+              text-align: center;
+              background-color: red;
+              color: #FFFFFF;
+              margin-right: 10px;
+              border-radius: 10px;
+              padding: 10px 10px;
+              border-radius: 6px;
+              font-size: 14px;
+              border: none;
+              &:hover{
+                cursor: pointer;
+                opacity: 0.8;
+              }
+            }
+          }
+  
+        }
+      }
+    }

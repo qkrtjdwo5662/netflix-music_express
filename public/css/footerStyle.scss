@@ -1,0 +1,95 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+//font-family: 'Noto Sans KR', sans-serif;
+
+$maind-red:#e50a15;
+$dark-red:#dc060f;
+$logo-dark-red:#b20710;
+$white:#ffffff;
+$gray:#303030;
+$light-gray:#686868;
+$black: #000000;
+$black2: #121212;
+
+//COMMON
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  // color: $white;
+}
+
+//footer
+footer {
+  position: relative;
+  width: 100vw;
+  background-color: #000000;
+  color: $light-gray;
+  padding: 30px 0px;
+
+  .inner {
+
+    .question {
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+  
+    .footer__menus {
+      display: flex;
+      justify-content: space-between;
+  
+      ul {
+        padding: 0;
+        margin-bottom: 50px;
+  
+        li {
+          margin-bottom: 15px;
+          font-size: 14px;
+          cursor: pointer;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .footer-bottom{
+      font-size: 13px;
+    }
+  
+    .dropdown {
+      margin-bottom: 40px;
+  
+      .btn-secondary {
+        background-color: #000000;
+        border-color: $light-gray;
+        color: $light-gray;
+        padding: 8px;
+        font-size: 15px;
+        border-radius: 3px !important;
+        transition: 0.1s !important;
+  
+        &:hover {
+          background-color: #2d2d2d !important;
+        }
+  
+        &:active {
+          color: $light-gray;
+        }
+  
+      }
+  
+      .dropdown-menu {
+        background-color: #000000;
+        border-color: $light-gray;
+        li a {
+          color: $light-gray;
+          &:hover {
+            background-color: #2d2d2d !important;
+          }
+        }
+      }
+    }
+    .company_info {
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+}

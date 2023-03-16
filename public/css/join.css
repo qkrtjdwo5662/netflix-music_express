@@ -1,0 +1,268 @@
+.join-title {
+  position: absolute;
+  margin-bottom: 550px;
+  font-size: 30px;
+  color: rgb(219, 219, 219);
+  margin-left: 20px;
+}
+
+.join-ad {
+  position: absolute;
+  margin-bottom: 340px;
+  font-size: 15px;
+  color: rgb(219, 219, 219);
+}
+
+.login-wrap {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/main_banner/login_bg@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-wrap .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.login-wrap .left .login-checkBox {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-wrap .left .login-checkBox .return-login {
+  margin-right: 15px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 3;
+}
+.login-wrap .left .login-checkBox .return-login:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: underline !important;
+}
+.login-wrap .left .login-checkBox img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+#pw_modal-wrongPw {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+#pw_modal-wrongPw .pw_modal-window {
+  position: relative;
+  top: 50px;
+  background: #131313;
+  border-radius: 20px;
+  width: 500px;
+  height: 150px;
+  top: 30%;
+  position: absolute;
+  padding: 20px;
+}
+#pw_modal-wrongPw .pw_modal-window .pw_content {
+  position: absolute;
+  margin-bottom: 60px;
+  right: 50%;
+  transform: translate(50%);
+}
+#pw_modal-wrongPw .pw_modal-window .pw_content .password-miss {
+  font-size: 18px;
+  color: #D1D1D1;
+}
+#pw_modal-wrongPw .pw_modal-window .pw_content .pwMissBtn {
+  position: absolute;
+  margin-bottom: 30px;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 40px;
+}
+#pw_modal-wrongPw .pw_modal-window .pw_content .pwMissBtn .rePassword {
+  text-align: center;
+  background-color: red;
+  color: #FFFFFF;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+}
+#pw_modal-wrongPw .pw_modal-window .pw_content .pwMissBtn .rePassword:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#pw_modal-empty {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+#pw_modal-empty .pw_modal-window {
+  position: relative;
+  top: 50px;
+  background: #131313;
+  border-radius: 20px;
+  width: 500px;
+  height: 150px;
+  top: 30%;
+  position: absolute;
+  padding: 20px;
+}
+#pw_modal-empty .pw_modal-window .pw_content {
+  position: absolute;
+  margin-bottom: 60px;
+  right: 50%;
+  transform: translate(50%);
+}
+#pw_modal-empty .pw_modal-window .pw_content .password-miss {
+  font-size: 18px;
+  color: #D1D1D1;
+}
+#pw_modal-empty .pw_modal-window .pw_content .pwMissBtn {
+  position: absolute;
+  margin-bottom: 30px;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 40px;
+}
+#pw_modal-empty .pw_modal-window .pw_content .pwMissBtn .rePassword {
+  text-align: center;
+  background-color: red;
+  color: #FFFFFF;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+}
+#pw_modal-empty .pw_modal-window .pw_content .pwMissBtn .rePassword:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#pw_modal-wrongEmail {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+#pw_modal-wrongEmail .pw_modal-window {
+  position: relative;
+  top: 50px;
+  background: #131313;
+  border-radius: 20px;
+  width: 500px;
+  height: 150px;
+  top: 30%;
+  position: absolute;
+  padding: 20px;
+}
+#pw_modal-wrongEmail .pw_modal-window .pw_content {
+  position: absolute;
+  margin-bottom: 60px;
+  right: 50%;
+  transform: translate(50%);
+}
+#pw_modal-wrongEmail .pw_modal-window .pw_content .password-miss {
+  font-size: 18px;
+  color: #D1D1D1;
+}
+#pw_modal-wrongEmail .pw_modal-window .pw_content .pwMissBtn {
+  position: absolute;
+  margin-bottom: 30px;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 40px;
+}
+#pw_modal-wrongEmail .pw_modal-window .pw_content .pwMissBtn .rePassword {
+  text-align: center;
+  background-color: red;
+  color: #FFFFFF;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+}
+#pw_modal-wrongEmail .pw_modal-window .pw_content .pwMissBtn .rePassword:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#pw_modal-joinConfirm {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+#pw_modal-joinConfirm .pw_modal-window {
+  position: relative;
+  top: 50px;
+  background: #131313;
+  border-radius: 20px;
+  width: 500px;
+  height: 150px;
+  top: 30%;
+  position: absolute;
+  padding: 20px;
+}
+#pw_modal-joinConfirm .pw_modal-window .pw_content {
+  position: absolute;
+  margin-bottom: 60px;
+  right: 50%;
+  transform: translate(50%);
+}
+#pw_modal-joinConfirm .pw_modal-window .pw_content .password-miss {
+  font-size: 18px;
+  color: #D1D1D1;
+}
+#pw_modal-joinConfirm .pw_modal-window .pw_content .pwMissBtn {
+  position: absolute;
+  margin-bottom: 30px;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 40px;
+}
+#pw_modal-joinConfirm .pw_modal-window .pw_content .pwMissBtn .rePassword {
+  text-align: center;
+  background-color: red;
+  color: #FFFFFF;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+}
+#pw_modal-joinConfirm .pw_modal-window .pw_content .pwMissBtn .rePassword:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}/*# sourceMappingURL=join.css.map */

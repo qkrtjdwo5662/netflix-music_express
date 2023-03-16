@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Music</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Netflix Music" />
+    <meta property="og:title" content="Netflix Music" />
+    <meta property="og:description" content="넷플릭스 음악 시장에 도전하다" />
+    <meta property="og:image" content="/img/favicon.png" />
+    <meta property="og:url" content="" />
+    <!-- Twitter Card -->
+    <meta property="twitter:type" content="website" />
+    <meta property="twiter:sitename" content="Netflix Music" />
+    <meta property="twitter:title" content="Netflix Music"/>
+    <meta property="twitter:description" content="넷플릭스 음악 시장에 도전하다" />
+    <meta property="twitter:image" content="/img/favicon.png" />
+    <meta property="twitter:url" content="" />
+    
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    
+    <!-- Jquery -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> </script>
+    <!-- login js -->
+    <script defer src="/js/login.js"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/media.css" /> -->
+    <!-- favicon -->
+    <link rel="icon" href="/img/favicon.png" />
+    
+  </head>
+
+
+  <body>
+  <!-- section -->
+  <div class="login-wrap">
+    <div class="left">
+      <div class="login-box">
+        <img src="/img/netflix_logo/nav_logo/netflixMusic_logo@2x.png" alt=""/>
+        <form action="/login" method="POST">
+          <input type="text" placeholder="아이디" class="login-id" name="id"/>
+          <br/>
+          <input type="password" placeholder="비밀번호" class="login-pw" name="password" />
+          <input type="submit" class="login-btn" value="로그인"/>
+        </form>
+        <div class="allText">Welcome! HERE IS NETFLIX MUSIC</div>
+        
+        <div class="login-checkBox">
+          <p>
+            <input type="checkbox" id="check1">
+            <label for="check1"></label>
+            <label for="check1" id="check-text">로그인 저장</label>
+          </p>
+          <div class="join">
+            <a href="/join" class="join-href">
+              회원가입
+            </a>
+            <a href="javiscrip:void(0)" class="join-href">
+              ID찾기
+            </a>
+            <a href="javiscrip:void(0)" class="join-href">
+              PW찾기
+            </a>
+          </div>
+        </div>
+        
+        <!-- <div class="login-text">
+          <span>Netflix Music 회원이 아닌가요?</span>
+          <a href="#">지금 가입하기</a>
+        </div> -->
+      </div>
+    </div>
+    <div class="right"></div>
+  </div>
+  </body>
+</html>

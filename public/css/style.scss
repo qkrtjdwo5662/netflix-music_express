@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+
+.inner{
+  position: relative;
+  padding: 0 75px;
+  width: 100%;
+}
+
+// reset
+@import "reset";
+
+// header
+@import "headerStyle";
+
+// main
+@import "main";
+
+//chart
+@import "chart";
+
+//detail
+@import "detail";
+
+//Login
+@import "login";
+
+//Join
+@import "join";
+
+// footer
+@import "footerStyle";
+
+// login
+@import "login";

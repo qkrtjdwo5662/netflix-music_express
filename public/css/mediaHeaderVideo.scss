@@ -1,0 +1,77 @@
+/* 모바일 사이즈 */
+@media (min-width: 360px) and (max-width: 415px){
+  
+  .pop-up__contain {
+    top: -12px !important;
+    left: -1px;
+    .pop-up__board {
+      width: 250px !important;
+      left: -200px !important;
+    }
+  }
+
+
+  header .mobile-menus {
+    display: block;
+    &.on {
+      display: none;
+    }
+  }
+
+  .mobile__check {
+    &.on {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+      transition-delay: 0.5s;
+    }
+  }
+
+  .replay-control-container.on {
+    .replay-deco {
+      bottom: -30px !important;
+      right: 20px !important;
+      text-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.1);
+      box-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.1);
+       #replay__btn {
+        font-size: 35px !important;
+      }
+    }
+  }
+
+.video__container {
+  .video_scope {
+    min-width: 0px !important;
+    width: 895px !important;
+    top: 318px !important;
+  }
+}
+
+  .sound-up-deco {
+    text-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.1);
+  }
+  .sound-muted-deco {
+    text-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 1px -1px 1px rgba($color: #000000, $alpha: 0.1);
+  }
+
+  .ex-menu {
+    .search{
+      right: 70px !important;
+      &.on {
+        width: 140px !important;
+      }
+      &::placeholder {
+        font-size: 10px;
+      }
+    } 
+
+    .search__icon {
+      &.on {
+        display: none !important;
+      }
+    }
+  }
+}
+

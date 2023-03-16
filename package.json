@@ -1,0 +1,36 @@
+{
+  "name": "netflix-music_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qkrtjdwo5662/netflix-music_express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qkrtjdwo5662/netflix-music_express/issues"
+  },
+  "homepage": "https://github.com/qkrtjdwo5662/netflix-music_express#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "left-pad": "^1.3.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "ejs": "^3.1.8",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  }
+}

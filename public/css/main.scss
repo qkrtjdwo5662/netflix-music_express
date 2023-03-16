@@ -1,0 +1,364 @@
+
+.non-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+}
+
+main {
+  background-color: black;
+  overflow: hidden;
+
+  //섹션1 배너
+  .section1 {
+
+  .inner{
+
+
+      .bannerSwiper {
+        overflow: hidden;
+        width: 100%;
+        height: 700px;
+      .swiper-wrapper {
+
+      .swiper-slide {
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: inherit;
+        &:nth-child(1) {
+                  background-image: url("../img/main_banner/main_banner1.png");
+                }
+                &:nth-child(2) {
+                  background-image: url("../img/main_banner/main_banner2@2x.png");
+                }
+                &:nth-child(3) {
+                  background-image: url("../img/main_banner/main_banner3@2x.png");
+                }
+                &:nth-child(4) {
+                  background-image: url("../img/main_banner/main_banner4@2x.png");
+                }
+
+          .video__container {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+            transition: 1s;
+            transition-timing-function: ease;
+
+            .video_scope {
+              position: absolute;
+              top: -10px;
+              min-width: 1600px;
+              z-index: 1;
+              left: 50%;
+              transform: translate(-50%, -120px);
+            }
+          }
+          //배너 안의 설명
+          .banner-box {
+            // width: inherit;
+            // height: inherit;
+            text-align: left;
+            display: block;
+            z-index: 999;
+            padding: 80px;
+            .main-banner-title {
+              font-size: 70px;
+              font-weight: 800;
+              color: #fff;
+              margin-bottom: 24px;
+              letter-spacing: -0.25px;
+            }
+            span {
+              font-size: 16px;
+              font-weight: 500;
+              color: #fff;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 300;
+              color: #e6e6e6;
+              margin: 12px 0 30px 0;
+              line-height: 1.25rem;
+            }
+            .btn-box {
+              display: block;
+              .btn {
+                padding: 12px 20px;
+                border-radius: 6px;
+                font-size: 14px;
+                border: none;
+              }
+              .btn--play {
+                background-color: #e50914;
+                color: #fff;
+                margin-right: 6px;
+              }
+              .btn--detail {
+                background-color: #383131;
+                color: #fff;
+              }
+            }
+            .muted-control-container {
+              position: absolute;
+              right: 0;
+              opacity: 0;
+              transition: 1s;
+              transition-delay: 1.5s;
+              .circle-deco {
+                position: absolute;
+                display: flex;
+                visibility: hidden;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid white;
+                border-radius: 50%;
+                bottom: -100px;
+                right: 100px;
+                cursor: pointer;
+  
+                .material-symbols-outlined {
+                  font-size: 70px;
+                  transform: scale(0.95);
+                  cursor: pointer;
+                  }
+                &:hover {
+                background-color: rgba($color: rgb(214, 214, 214), $alpha: 0.5);
+                border-radius: 50%;
+                }
+                &.on {
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+            }
+            .replay-control-container {
+              position: absolute;
+              right: 0;
+              opacity: 0;
+              visibility: hidden;
+              // transition: 0.5s;
+              &.on {
+                visibility: visible;
+                opacity: 1;
+              &:hover > .replay-deco {
+                background-color: rgba($color: rgb(214, 214, 214), $alpha: 0.5);
+                border-radius: 50%;
+                }
+
+              .replay-deco {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid white;
+                border-radius: 50%;
+                bottom: -10px;
+                right: 100px;
+                transition: 0.5s;
+                cursor: pointer;
+                transform: rotate(90deg);
+                 #replay__btn{
+                  font-size: 70px;
+                  cursor: pointer;
+                  }
+                }                  
+             }
+            }
+        }
+      }
+     }
+    }
+  }
+  //배너의 화살표
+  .swiper-button-next,
+  .swiper-button-prev {
+  color: #dedede;
+  }
+
+  .swiper-pagination-bullet-active {
+  background-color: #e50914 !important;
+  }
+ }
+
+
+ 
+ //섹션2 장르필터
+ .section2 {
+ 
+  .inner {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 200px;
+  }
+  .chart {
+    position: relative;
+    top: 0;
+    height: 100%;
+       .main-title {
+        position: absolute;
+        font-size: 35px;
+        padding: 20px;
+        }
+
+        .sub {
+        .sub__detail {
+          position: absolute;
+          width: 100%;
+          top: 100px;
+          ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-left: 0px;
+  
+            li {
+              list-style: none;
+              padding: 12px 20px;
+              margin: 5px;
+              letter-spacing: 1px;
+              cursor: pointer;
+              border: 1px solid var(--unnamed-color-707070);
+              border: 1px solid #424242;
+              border-radius: 6px;
+              opacity: 1;
+  
+              &.active {
+                background-color: #fff;
+                color: black;
+              }
+            }
+          }
+          .all-title {
+            text-align: left;
+            margin-top: 80px;
+            font: normal normal bold 24px/29px Pretendard;
+          }              
+      }
+   }
+  }
+ }
+
+  .genre-zone {
+    margin-top: 35px;
+  }
+
+ //섹션3 앨범 쟈켓 스와이퍼
+ .section3 {
+    .inner {
+      position: relative;
+      left: 0;
+      width: 100%;
+
+      height: 2200px; // main.js에서 장르 버튼 클릭 시, height 300px로 잡도록 설정
+
+      .all-title {
+        text-align: left;
+        margin-top: 50px;
+        font: normal normal bold 24px/29px Pretendard;
+      }     
+
+        .swiper-zone {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        p{
+          top: 20px;
+        }
+        .albums {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+       
+          .swiper-wrapper {
+          gap: 30px !important;
+          height: 300px;
+          top: -10px;
+          display: flex;
+          align-items: center;
+
+          .swiper-slide {
+            width: 200px !important;
+            align-items: center;
+            padding-top: 50px;
+
+            &:hover {
+              transform: scale(1.5);
+              transition: 0.5s;
+              transition-delay: 0.5s;
+              z-index: 999;
+            }
+
+            &.hide {
+              display: none;
+            }
+            
+            .album-box {
+            position: relative;
+            width: 200px;
+            min-width: 200px;
+            min-height: 200px;
+            display: block; 
+            align-items: center; 
+            background-position: center; 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            border-radius: 15px;
+            transform-origin: center;
+            cursor: pointer;
+            z-index: 1;
+
+            .hoverBox{
+              position: absolute;
+              width: 100%;
+              background: transparent
+              linear-gradient(180deg, #00000000 0%, #000000 105%) 0%
+              0% no-repeat padding-box;
+              padding-left: 20px;
+              height: 50px;
+              bottom: 0;
+              position: absolute;
+              font-size: small;
+              line-height: 1.2rem;
+              transition: 0.5s;
+
+            }
+          }
+        }
+      }
+     }
+    }
+  }
+}
+}
+.swiper-button-lock {
+  display: block;
+}
+
+.swiper-button-prev.mainSwiper0,
+.swiper-button-next.mainSwiper0{
+  top: 140px;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}

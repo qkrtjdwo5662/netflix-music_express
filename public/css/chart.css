@@ -1,0 +1,200 @@
+.chartSwiper .swiper-button-next, .chartSwiper .swiper-button-prev {
+  color: #dedede;
+}
+.chartSwiper .swiper-button-next.swiper-button-disabled,
+.chartSwiper .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.top-title {
+  margin-top: 100px;
+}
+.top-title .inner .title {
+  font-size: 38px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 65px;
+}
+.top-title .inner .sub-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.chart-wrap .inner .row {
+  display: flex;
+}
+.chart-wrap .inner .row .col {
+  width: 100%;
+  margin-right: 20px;
+}
+.chart-wrap .inner .row .col .chart-list {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #252525;
+  width: 100%;
+  height: 82px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+.chart-wrap .inner .row .col .chart-list .--album-img {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: #fff;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/main_album/main_album1.png);
+}
+.chart-wrap .inner .row .col .chart-list .--album-img .beforeHover {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 52px;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+  transition: 1s;
+  cursor: pointer;
+}
+.chart-wrap .inner .row .col .chart-list .--album-img .beforeHover::before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  top: 17px;
+  left: 17px;
+  border-left: 16px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.chart-wrap .inner .row .col .chart-list .--num {
+  padding: 0px 18px 0px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.chart-wrap .inner .row .col .chart-list .audio-album-img {
+  border-radius: 4px;
+  margin-right: 12px;
+  min-width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.chart-wrap .inner .row .col .chart-list .--text-box .album-title {
+  font-size: 16px;
+  line-height: 1.3rem;
+  margin-bottom: 2px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.chart-wrap .inner .row .col .chart-list .--text-box .album-sub-title {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 0px !important;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.swiperChart-zone.inner {
+  padding: 0px, 75px;
+  margin-top: 80px;
+}
+
+.swiperChart-zone {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.swiperChart-zone p {
+  position: absolute;
+  top: -10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.swiperChart-zone .swiperChart__container {
+  position: absolute;
+  width: calc(100vw - 75px - 75px);
+  height: 300px;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper {
+  gap: 50px;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  min-width: 265px;
+  margin-right: 0px !important;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide.hide {
+  display: none;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper:hover > .album-box {
+  transform: scale(1.5);
+  transition: 0.5s;
+  transition-delay: 0.3s;
+  z-index: 9;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .rank {
+  position: static;
+  font-size: 200px;
+  z-index: 1;
+  transform: translate(-5px, -5px);
+  -webkit-text-stroke: 3px #6C6C6C;
+  color: transparent;
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .album-box {
+  position: static;
+  width: 170px;
+  height: 170px;
+  transform: translateX(-30px);
+  display: block;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: inherit;
+  border-radius: 15px;
+  transform-origin: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.swiperChart-zone .swiperChart__container .swiper-wrapper .swiper-slide .rank-wrapper .album-box .hoverBox {
+  position: absolute;
+  width: 100%;
+  background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 105%) 0% 0% no-repeat padding-box;
+  padding-left: 20px;
+  height: 50px;
+  bottom: 0;
+  position: absolute;
+  font-size: small;
+  line-height: 1.2rem;
+  transition: 0.5s;
+}
+.swiperChart-zone .swiper-button-next, .swiperChart-zone .swiper-button-prev {
+  color: #dedede;
+}
+.swiperChart-zone .swiper-button-next.swiper-button-disabled,
+.swiperChart-zone .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}/*# sourceMappingURL=chart.css.map */
