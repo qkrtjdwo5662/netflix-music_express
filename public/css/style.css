@@ -1156,7 +1156,8 @@ main .section3 .inner .swiper-zone .albums .swiper-wrapper .swiper-slide .album-
   margin: 0 auto 50px;
 }
 .login-wrap .left .login-box .login-id,
-.login-wrap .left .login-box .login-pw {
+.login-wrap .left .login-box .login-pw,
+.login-wrap .left .login-box .login-name {
   width: 310px;
   font-size: 15px;
   color: #fff;
@@ -1640,7 +1641,8 @@ footer .inner .company_info {
   margin: 0 auto 50px;
 }
 .login-wrap .left .login-box .login-id,
-.login-wrap .left .login-box .login-pw {
+.login-wrap .left .login-box .login-pw,
+.login-wrap .left .login-box .login-name {
   width: 310px;
   font-size: 15px;
   color: #fff;

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const testRouter = require('./routes/test');
 const loginRouter = require('./routes/login');
 const joinRouter = require('./routes/join');
+const mainRouter = require('./routes/main');
 
 const app = express();
 
@@ -19,11 +20,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/test', testRouter);
 app.use('/login', loginRouter);
 app.use('/join', joinRouter);
+app.use('/main', mainRouter);
 
 app.use((err, req, res, next) => {
   console.log(err.stack);
   res.status(err.statusCode);
-  res.send(`${err.message} <a href="/">돌아가</a>`);
+  // res.send(`${err.message} <a href="/">돌아가</a>`);
+  res.send('<a href="/login">돌아가</a>');
 });
 
 app.listen(PORT, () => {

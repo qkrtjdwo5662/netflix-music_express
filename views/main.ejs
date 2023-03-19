@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Music</title>
+
+    
+    <!-- Jquery -->
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Netflix Music" />
+    <meta property="og:title" content="Netflix Music" />
+    <meta property="og:description" content="넷플릭스 음악 시장에 도전하다" />
+    <meta property="og:image" content="./favicon.png" />
+    <meta property="og:url" content="" />
+    <!-- Twitter Card -->
+    <meta property="twitter:type" content="website" />
+    <meta property="twiter:sitename" content="Netflix Music" />
+    <meta property="twitter:title" content="Netflix Music"/>
+    <meta property="twitter:description" content="넷플릭스 음악 시장에 도전하다" />
+    <meta property="twitter:image" content="./favicon.png" />
+    <meta property="twitter:url" content="" />
+
+    <link rel="icon" href="/favicon.png" />
+    
+    <!-- FontAwsome -->
+    <script
+      src="https://kit.fontawesome.com/c37ef34cf6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    
+    <!-- INTRO JS -->
+    <script defer src="/js/introJS.js"></script>
+    <!-- main js -->
+    <script defer src="/js/main.js"></script>
+    <!-- HEADER JS -->
+    <script defer src="/js/header.js"></script>
+    <!-- modal js -->
+    <script defer src="/js/modal.js"></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script defer src="/js/swiper.js"></script>
+    <script defer src="/js/mainBannerMVSwiper.js"></script>
+
+
+
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+    <link rel="stylesheet" href="/css/mediaHeaderVideo.css" />
+
+  </head>
+  <body style="overflow-x: hidden;">
+    <!-- header -->
+    <header>
+      <div class="inner">
+        <!-- 로고 -->
+        <a class="header__logo" href="#">
+          <img
+            src="/img/netflix_logo/nav_logo/netflixMusic_logo@2x.png"
+            alt="로고 이미지"
+          />
+        </a>
+
+        <!-- MENUS -->
+        <div class="menus">
+          <a href="#">홈</a>
+          <a href="./chart.html">차트</a>
+        </div>
+
+        <!-- 모바일용 메뉴 -->
+        <div class="btn-group mobile-menus">
+          <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            메뉴
+          </button>
+          <ul class="dropdown-menu mobile-dropDownMenu">
+            <li><a class="dropdown-item" href="#">홈</a></li>
+            <li><a class="dropdown-item" href="./chart.html">차트</a></li>
+          </ul>
+        </div>
+
+        <!-- 서칭 및 로그인 외-->
+        <div class="ex-menu">
+          <input type="text" class="search" id="no-hidden" />
+          <a href="javascript:void(0)" class="search__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <!-- 반응형 검색창체크 -->
+          <a class="mobile__check"><span class="material-symbols-outlined" id="mobile-check">done</span></a>
+
+          <!-- POP-UP -->
+          <div href="javascript:void(0)" class="pop-up">
+            <i class="fa-solid fa-bell"></i>
+            <div class="pop-up__contain">
+              <span class="material-symbols-outlined" id="pop-up__deco"
+                >arrow_drop_down</span
+              >
+              <div class="pop-up__board">최근 알림 메시지가 없습니다.</div>
+            </div>
+          </div>
+
+          <!-- LOGIN 영역 -->
+          <div class="login">
+            <!-- LOGIN-MOADL & POP-UP -->
+            <div class="login__submenus">
+              <span class="material-symbols-outlined" id="login__submenus__deco"
+                >arrow_drop_down</span
+              >
+
+              <div class="login__contents__contain">
+                <ul class="login__submenus__list">
+                  <li class="submenus__first">
+                    <ul>
+                      <li>
+                        <div class="login-sub icon1"></div>
+                        <p>프로필1</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon2"></div>
+                        <p>프로필2</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon3"></div>
+                        <p>프로필3</p>
+                      </li>
+                      <li>
+                        <div class="login-sub icon4"></div>
+                        <p>프로필4</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="submenus__second">
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)"><span class="material-symbols-outlined" id="pen-icon">edit</span></a>
+                        <a href="javascript:void(0)">프로필 관리</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"><span class="material-symbols-outlined" id="switch_account">switch_account</span></a>
+                        <a href="javascript:void(0)">프로필 이전</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"><span class="material-symbols-outlined" id="account">person</span></a>
+                        <a href="javascript:void(0)">계정</a>
+                      </li>
+                      <li>
+                        <a href="https://help.netflix.com/ko"><span class="material-symbols-outlined" id="question">help</span></a>
+                        <a href="https://help.netflix.com/ko">고객 센터</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="submenus__third">
+                    <a href="javascript:void(0)"><div class="logout__logo"></div></a>
+                    <a class="logoout__text" href="/login">뮤직에서 로그아웃</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <span class="material-symbols-outlined" id="login__arrow"
+            >arrow_drop_down</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 색션1 메인배너 및 MV swiper-->
+      <section class="section1">
+        <div class="inner non-padding">
+          <!-- Swiper -->
+          <div class="swiper bannerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/NewJeans OMG.mp4" class="video_scope mv"></video>
+                </div>
+                <div class="banner-box">
+                  <input type="checkbox" name="ddd">
+                  <h1 class="main-banner-title">NewJeans 'OMG'</h1>
+                  <span>NewJeans</span>
+                  <p>
+                    첫 겨울을 맞이하는 NewJeans의 새 앨범 “OMG”는 조금은 묘한
+                    거리감,<br />
+                    조금은 낯선 배경 속에서 다시 한번 관계를 이야기한다. 그리고
+                    그 안에 특별하고 의미 있는 선물을 담아내고 있다.<br />
+                    1st.EP “New Jeans”에서 담아냈던, 사람의 관계와 끌림에 대해
+                    이야기하며 함께 있을 때 더 빛나는 10대 소녀들이<br />
+                    들려주는 '우리'라는 서사는 모습을 바꿔가며 또 한 번
+                    펼쳐진다. 낯섦을 지나 공감, 환대, 호혜에 기반을 둘 때,<br />
+                    '우리'는 더 가까워지고, 함께 성장한다고 믿는다.
+                  </p>
+                  <div class="btn-box">
+                    <button class="btn btn--detail">상세 보기</button>
+                  </div>
+                  <!-- 뮤트 온-오프 버튼 -->
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco on">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
+                  <!-- 리플레이버튼 -->
+                  <div class="replay-control-container">
+                    <div class="circle-deco replay-deco">
+                        <span class="material-symbols-outlined" id="replay__btn">replay</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/TNX  Love or Die MV.mp4" class="video_scope mv"></video>
+                </div>
+                <div class="banner-box">
+                  <h1 class="main-banner-title">Love Never Dies</h1>
+                  <span>TNX</span>
+                  <p>
+                    TNX는 리더 최태훈을 필두로, 우경준, 장현수, 천준혁, 은휘,
+                    오성준까지 6명의 멤버로 구성된 보이그룹으로,<br />
+                    ‘감성과 강성이 공존하는 퍼포먼스로 동세대와 함께 용기를 내서
+                    도전하고, 극복하며 성장해나갈 새로운 여섯명’이라는<br />
+                    그룹의 의미처럼 앞으로 그들이 추구 할 신선하고 다채로운
+                    음악에 대한 의지를 담았다.
+                  </p>
+                  <div class="btn-box">
+                    <button class="btn btn--detail">상세 보기</button>
+                  </div>
+                  <!-- 뮤트 온-오프 버튼 -->
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco on">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
+                  <!-- 리플레이버튼 -->
+                  <div class="replay-control-container">
+                    <div class="circle-deco replay-deco">
+                     <replay class="material-symbols-outlined" id="replay__btn">replay</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/Sam Smith Unholy MV.mp4" class="video_scope mv"></video>
+                </div>
+                <div class="banner-box">
+                  <h1 class="main-banner-title">Unholy</h1>
+                  <span>Sam Smith, Kim Petras</span>
+                  <p>
+                    더 이상 ‘Stay with me’ 시절의 샘 스미스가 아니다. 그들은 1집
+                    시절 만들어진 자신에 대한 고정관념을 과격히 깨부수길 원한다.
+                    <br />
+                    렉트로닉 음악을 발표하는 등 파격 행보를 걷더니 이번엔 수위가
+                    한층 높다. 사운드와 가사 양면에서 지금까지 발표한 곡들 중
+                    가장 도발적이다. <br />
+                    어둡고 금속성 강한 소리를 사용했으며 불경함 속에서 환희를
+                    느끼는 분위기를 연출했다. 가장 그들답지 않은 시도지만
+                    뮤지션으로서의 만족도는 <br />
+                    높았다고 한다. “가장 창의적인 시도를 한 곡이다. 정말
+                    재미있게 만들었다”고 말했다. 미국 LA 선셋 스트립의 클럽 바디
+                    샵에서 영감을 받아 만들었다고 한다. <br />
+                    가사에도 “바디 샵”이 등장한다.
+                  </p>
+                  <div class="btn-box">
+                    <button class="btn btn--detail">상세 보기</button>
+                  </div>
+                  <!-- 뮤트 온-오프 버튼 -->
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco on">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
+                  <!-- 리플레이버튼 -->
+                  <div class="replay-control-container">
+                    <div class="circle-deco replay-deco">
+                     <replay class="material-symbols-outlined" id="replay__btn">replay</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide mvslide">
+                <div class="video__container">
+                  <video src="./MV/Charlie Puth Left And Right MV.mp4" class="video_scope mv"></video>
+                </div>
+                <div class="banner-box">
+                  <h1 class="main-banner-title">CHARLIE</h1>
+                  <span>Charlie Puth</span>
+                  <p>
+                    편곡적으로 흠잡을 곳이 없는 작품이지만, 기존의 찰리 푸스
+                    음악에 비해 새롭게 느껴지는 지점이 없어 약간의 아쉬움도
+                    남습니다.<br />
+                    다만 사랑과 이별을 대하는 아티스트의 입체적인 모습을 엿볼 수
+                    있고, 그동안 소셜 미디어를 통해 제작 과정을 공개하고 소통해
+                    온 만큼<br />
+                    팬들의 입장에서 더욱 가깝게 느껴지는 앨범이 아닐까 싶은데요.
+                    이번 주는 소울풀한 매력과 위트가 돋보이는 앨범을
+                    추천드립니다.
+                  </p>
+                  <div class="btn-box">
+                    <button class="btn btn--detail">상세 보기</button>
+                  </div>
+                  <!-- 뮤트 온-오프 버튼 -->
+                  <div class="muted-control-container">
+                    <div class="circle-deco sound-up-deco on">
+                      <span class="material-symbols-outlined sound-up">volume_up</span>
+                    </div>
+                    <div class="circle-deco sound-muted-deco">
+                      <span class="material-symbols-outlined sound-muted">volume_off</span>
+                    </div>
+                  </div>
+                  <!-- 리플레이버튼 -->
+                  <div class="replay-control-container">
+                    <div class="circle-deco replay-deco">
+                     <replay class="material-symbols-outlined" id="replay__btn">replay</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper buttn -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+       
+      <!-- 섹션2 장르 필터 버튼 -->
+      <section class="section2">
+        <div class="inner">
+          <div class="chart">
+            <!-- <p class="main-title">실시간 차트</p> -->
+            <div class="sub">
+              <div class="sub__detail">
+                <!-- filter BTN -->
+                <ul>
+                  <li class="list active" data-filter="all">All</li>
+                  <li class="list" data-filter="kpop">K-POP</li>
+                  <li class="list" data-filter="pop">POP</li>
+                  <li class="list" data-filter="hiphop">Hip-hop</li>
+                  <li class="list" data-filter="classic">Classic</li>
+                  <li class="list" data-filter="dance">Dance</li>
+                </ul>
+                <!-- <p class="all-title">All</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="genre-zone"></div>
+      
+      <!-- 섹션3 앨범자켓 스와이퍼(재생) + 모달-->
+      <section class="section3">
+        <div class="inner">
+          <span class="all-title">All</span>
+          <div class="swiper-zone">
+            <div class="swiper2 albums">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="album-box">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 앨범 Swiper btn1 -->
+          <div class="swiper-button-prev mainSwiper0"></div>
+          <div class="swiper-button-next mainSwiper0"></div>
+        </div>
+      </section>        
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <p class="question">질문이 있으신가요? 문의 전화: 080-000-0000</p>
+        <div class="footer__menus">
+          <ul>
+            <li>자주 묻는 질문</li>
+            <li>투자 정보(IR)</li>
+            <li>개인정보 처리방침</li>
+            <li>속도 테스트</li>
+          </ul>
+          <ul>
+            <li>고객 센터</li>
+            <li>입사 정보</li>
+            <li>쿠키 설정</li>
+            <li>법적 고지</li>
+          </ul>
+          <ul>
+            <li>계정</li>
+            <li>넷플릭스 지원 디바이스</li>
+            <li>회사 정보</li>
+            <li>오직 넷플릭스뮤직에서</li>
+          </ul>
+          <ul>
+            <li>미디어 센터</li>
+            <li>이용 약관</li>
+            <li>문의하기</li>
+          </ul> 
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> 한국어
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English(US)</a></li>
+            <li><a class="dropdown-item" href="#">English(UK)</a></li>
+            <li><a class="dropdown-item" href="#">Japan</a></li>
+            <li><a class="dropdown-item" href="#">China</a></li>
+            <li><a class="dropdown-item" href="#">German</a></li>
+            <li><a class="dropdown-item" href="#">French</a></li>
+            <li><a class="dropdown-item" href="#">Italian</a></li>
+          </ul>
+        </div>
+
+        <p class="company_info">
+          넷플릭스뮤직 대한민국 <br /><br />
+          넷플릭스뮤직 서비스코리아 유한회사 통신판매업신고번호: 제 2023-서울마포-0422호 전화번호: 080-000-0000 <br />
+          대표: 두루미와 아이들<br />
+          이메일 주소: korea@netflixmusic.com<br />
+          주소: 대한민국 서울특별시 마포구 염리동 55, 코딩온 지하1층 우편번호 03100<br />
+          사업자등록번호: 165-00-01010<br />
+          클라우드 호스팅: Amazon Web Services Inc.<br />
+          공정거래위원회 웹사이트<br />
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- modal -->
+    <div id="modal" class="modal-overlay">
+      <div class="modal-window">
+        <div class="close-area">X</div>
+        <div class="content">
+          <div class="content-image">
+            <!-- <img class="image" src="img/main_album/main_album1.png" /> -->
+          </div>
+
+          <div class="content-text">
+            <h2 class="al-name">ALBUM</h2>
+            <div class="singer">singer</div>
+            <div class="date">2020. 02. 02</div>
+            <div class="info">
+              IVE THE 2nd SINGLE ALBUM
+            </div>
+            <div class="info-sub">
+              - “사랑할 용기가 있다면?” ‘감히 뛰어들어’ 큐피드가 된 아이브,
+              Z세대의 사랑법 …더보기 - 데뷔 동시 ‘글로벌 수퍼 루키’, 주체적인
+              ‘Z세대 워너비’ 각인 - ‘우아하고 멋지게’ 무대를 런웨이처럼…완성형
+              비주얼+퍼포먼스
+            </div>  
+          </div>
+        </div>
+
+        <div class="detail-button">
+          <div class="modalTrack-PlayBtn">재생</div>
+          <!-- <div class="button2">button2</div> -->
+        </div>
+
+        <div class="detail-track">
+          <div class="track-info">
+            <!-- <div class="track-checkbox">
+              <input type="checkbox" id="check2">
+              <div class="track-title">title</div>
+            </div> -->
+            <!-- <div class="track-title">title</div> -->
+            <div class="track-singer"></div>
+            <div class="track-time">time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="audio-container" id="audio-container">
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+      <ul class="control">
+        <li class="pause hidden"><i class="fas fa-pause"></i></li>
+        <li class="play"><i class="fas fa-play"></i></li>
+        <!-- <li class="reload"><i class="fas fa-redo-alt"></i></li> -->
+      </ul>
+      <div class="audio-album">
+        <div class="audio-album-img"></div>
+        <div class="--text-box">
+          <p class="album-title"></p>
+          <p class="album-sub-title"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
