@@ -2,12 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
+const app = express();
+
 const testRouter = require('./routes/test');
 const loginRouter = require('./routes/login');
 const joinRouter = require('./routes/join');
 const mainRouter = require('./routes/main');
-
-const app = express();
 
 const PORT = 4001;
 
