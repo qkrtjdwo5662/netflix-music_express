@@ -180,14 +180,14 @@
           <!-- Swiper -->
           <div class="swiper bannerSwiper">
             <div class="swiper-wrapper">
-              <% for (let i=0; i<data.length; i++) { %>
+              <% for (let i=0; i < mainBanner.length; i++) { %>
               <div class="swiper-slide mvslide">
                 <div class="banner-box">
                   <input type="checkbox" name="ddd">
-                  <h1 class="main-banner-title"><%= data[i].TITLE%></h1>
-                  <span><%= data[i].SINGER %></span>
+                  <h1 class="main-banner-title"><%= mainBanner[i].TITLE%></h1>
+                  <span><%= mainBanner[i].SINGER %></span>
                   <p>
-                    <%= data[i].CONTENT %>
+                    <%= mainBanner[i].CONTENT %>
                   </p>
                   <div class="btn-box">
                     <button class="btn btn--detail">상세 보기</button>
@@ -235,126 +235,12 @@
           <div class="swiper-zone">
             <div class="swiper2 albums">
               <div class="swiper-wrapper">
+                <% for(let i=0; i<album.length; i++) {%>
                 <div class="swiper-slide">
-                  <div class="album-box">
+                  <div class="album-box" style="background-image: url('<%=album[i].ALBUM_IMG%>');">
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="album-box">
-                  </div>
-                </div>
+                <% } %>
               </div>
             </div>
           </div>
