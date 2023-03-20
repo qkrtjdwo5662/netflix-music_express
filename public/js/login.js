@@ -3,13 +3,13 @@ const loginId = document.querySelector('.login-id');
 const loginPw = document.querySelector('.login-pw');
 
 window.onload = () => {
-  console.log(localStorage.getItem('autoLogin'));
-  console.log('window on load');
-  console.log(loginCheckBox.checked);
+  // console.log(localStorage.getItem('autoLogin'));
+  // console.log('window on load');
+  // console.log(loginCheckBox.checked);
   if (localStorage.getItem('autoLogin') === 'true') {
+    // console.log(document.cookie);
     loginCheckBox.checked = true;
-    loginId.value = localStorage.getItem('ID');
-    loginPw.value = localStorage.getItem('PW');
+    // console.log(document.cookie);
   } else {
     loginCheckBox.checked = false;
     loginId.value = '';

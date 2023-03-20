@@ -46,9 +46,9 @@
       <div class="login-box">
         <img src="/img/netflix_logo/nav_logo/netflixMusic_logo@2x.png" alt=""/>
         <form action="/login" method="POST">
-          <input type="text" placeholder="아이디" class="login-id" name="id"/>
+          <input type="text" placeholder="아이디" class="login-id" name="id" value="<%= userId%>"/>
           <br/>
-          <input type="password" placeholder="비밀번호" class="login-pw" name="password" />
+          <input type="password" placeholder="비밀번호" class="login-pw" name="password" value="<%= userPw%>" />
           <div class="allText">Welcome NETFLIX MUSIC !</div>
           <input type="submit" class="login-btn" value="로그인"/>
         </form>
@@ -56,7 +56,7 @@
           <p>
             <input type="checkbox" id="check1">
             <label for="check1"></label>
-            <label for="check1" id="check-text">로그인 저장</label>
+            <label for="check1" id="check-text">로그인 정보 저장</label>
           </p>
           <div class="join">
             <a href="/join" class="join-href">
